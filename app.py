@@ -139,7 +139,7 @@ input_data = pd.DataFrame([{
 # MATCH EXACT TRAINING FEATURE ORDER
 # ==========================================
 
-input_data = input_data.reindex(columns=features)
+input_data = input_data[features]
 
 # ==========================================
 # PREDICTION
