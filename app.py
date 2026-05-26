@@ -142,8 +142,7 @@ input_values = [
     blood_disorder
 ]
 
-input_data = 
-pd.DataFrame([input_values])
+input_data = pd.DataFrame([input_values])
 
 input_data.columns = features
 
