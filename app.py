@@ -151,7 +151,7 @@ input_data.columns = features
 # SCALE INPUT DATA
 # ==========================================
 
-scaled_data = scaler.transform(input_data.values)
+scaled_data = scaler.transform(input_data)
 
 # ==========================================
 # PREDICTION
