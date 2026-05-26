@@ -141,23 +141,8 @@ input_data = pd.DataFrame([[
     st_slope,
     stained_blood_vessels,
     blood_disorder
-]], columns=[
+]], columns=features)
 
-    'age',
-    'sex',
-    'chest_pain_type',
-    'resting_blood_pressure',
-    'cholesterol',
-    'fasting_blood_sugar',
-    'ecg',
-    'max_heart_rate',
-    'exercise_induced_chest_pain',
-    'st_depression',
-    'st_slope',
-    'stained_blood_vessels',
-    'blood_disorder'
-
-])
 
 # ==========================================
 # SCALE INPUT DATA
