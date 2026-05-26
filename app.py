@@ -14,7 +14,6 @@ features = rf_pipeline["features"]
 # ==========================================
 # PAGE CONFIGURATION
 # ==========================================
-
 st.set_page_config(
     page_title="Heart Disease Prediction App",
     page_icon="❤️",
@@ -127,7 +126,7 @@ sex = 1 if sex == "Male" else 0
 # CREATE INPUT DATAFRAME
 # ==========================================
 
-input_data = pd.DataFrame([[
+input_values = [
     age,
     sex,
     chest_pain_type,
@@ -141,7 +140,12 @@ input_data = pd.DataFrame([[
     st_slope,
     stained_blood_vessels,
     blood_disorder
-]], columns=features)
+]
+
+input_data = 
+pd.DataFrame([input_values])
+
+input_data.columns = features
 
 
 # ==========================================
