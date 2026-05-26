@@ -92,6 +92,50 @@ st_depression = st.number_input(
     min_value=0.0,
     max_value=10.0,
     value=1.0
+)
+
+st_slope = st.selectbox(
+    "ST Slope",
+    [0, 1, 2]
+)
+
+stained_blood_vessels = st.selectbox(
+    "Number of Stained Blood Vessels",
+    [0, 1, 2, 3, 4]
+)
+
+blood_disorder = st.selectbox(
+    "Blood Disorder",
+    [0, 1, 2, 3]
+)
+
+# ==========================================
+# ENCODE CATEGORICAL VARIABLES
+# ==========================================
+
+sex = 1 if sex == "Male" else 0
+
+# ==========================================
+# CREATE INPUT DATAFRAME
+# ==========================================
+
+input_data = pd.DataFrame([{
+    "age": age,
+    "sex": sex,
+    "chest_pain_type": chest_pain_type,
+    "resting_blood_pressure": resting_blood_pressure,
+    "cholesterol": cholesterol,
+    "fasting_blood_sugar": fasting_blood_sugar,
+    "ecg": ecg,
+    "max_heart_rate": max_heart_rate,
+    "exercise_induced_chest_pain": exercise_induced_chest_pain,
+    "st_depression": st_depression,
+    "st_slope": st_slope,
+    "stained_blood_vessels": stained_blood_vessels,
+    "blood_disorder": blood_disorder
+}])
+
+# ==========================================
 # MATCH EXACT TRAINING FEATURE ORDER
 # ==========================================
 
