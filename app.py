@@ -10,7 +10,7 @@ rf_pipeline = joblib.load("rf_pipeline.pkl")
 
 model = rf_pipeline["model"]
 scaler = rf_pipeline["scaler"]
-
+features = rf_pipeline["features"]
 # ==========================================
 # PAGE CONFIGURATION
 # ==========================================
